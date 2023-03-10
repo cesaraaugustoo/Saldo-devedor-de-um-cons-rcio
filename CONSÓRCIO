@@ -1,0 +1,26 @@
+using System;
+
+class Program 
+{
+  public static void Main (string[] args) 
+  {
+    int totalP;
+    int numeroPresPg;
+    double valorDaPres;
+    double saldoDevedor;
+
+    
+    Console.WriteLine("Consulte a situaçãodo seu consórcio!");
+    Console.WriteLine("Número total de prestações do  consórcio: ");
+    totalP = Convert.ToInt16(Console.ReadLine());
+    Console.WriteLine("Digite o número de prestações pagas: ");
+    numeroPresPg = Convert.ToInt16(Console.ReadLine());
+    Console.WriteLine("Informe o valor atual da prestação: ");
+    valorDaPres = Convert.ToDouble(Console.ReadLine());
+
+    saldoDevedor = ((totalP - numeroPresPg) * valorDaPres);
+
+    Console.WriteLine("O saldo devedor atual é " + saldoDevedor);
+ 
+  }
+}
